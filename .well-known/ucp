@@ -1,0 +1,37 @@
+{
+  "ucp": {
+    "version": "2026-01-11",
+    "services": {
+      "dev.ucp.shopping": {
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/specs/shopping",
+        "mcp": {
+          "schema": "https://ucp.dev/services/shopping/mcp.openrpc.json",
+          "endpoint": "https://vertatrend.github.io/api/mcp"
+        }
+      }
+    },
+    "capabilities": [
+      {
+        "name": "dev.ucp.shopping.discovery",
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/specs/shopping/discovery"
+      },
+      {
+        "name": "dev.ucp.shopping.checkout",
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/specs/shopping/checkout"
+      }
+    ]
+  },
+  "payment": {
+    "handlers": [
+      {
+        "id": "gpay",
+        "name": "com.google.pay",
+        "version": "2024-12-03",
+        "spec": "https://ucp.dev/handlers/google_pay"
+      }
+    ]
+  }
+}
